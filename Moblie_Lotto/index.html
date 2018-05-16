@@ -29,7 +29,7 @@ $(document).ready(function(){
 			url:,
 			data: {},
 			dataType: 'json',
-			async : false,//设置为同步操作就可以给全局变量赋值成功
+			async : false,//设置为同步操作就可以给全局变量赋值成功,这一步是及其重要的一步，不然你会发现请求过来的数据在ajax外部访问不到
 			success:function(data){
 				turnplate.restaraunts = data;//usersname为前面声明的全局变量
 			}
